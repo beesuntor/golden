@@ -1,0 +1,156 @@
+/* Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Montserrat;
+}
+
+/* Navigation*/
+.navigation {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url('https://i.postimg.cc/BQgMzfRN/Background-Image.png');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.overlay {
+  background: #00000085;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.menu,
+.home {
+  z-index: 2;
+}
+.row {
+  max-height: 150px;
+}
+
+.logo {
+  font-size: 36px;
+  color: #fed136;
+  width: 30vh;
+  font-family: Pacifico;
+  text-align: right;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 80vh;
+  list-style-type: none;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 10%;
+}
+.header a {
+  padding: 0 50px 0 0;
+  font-size: 14px;
+  color: aliceblue;
+  text-decoration: none;
+  text-align: start;
+}
+
+.home-title {
+  color: white;
+  font-family: serif;
+  font-style: italic;
+  font-size: 40px;
+}
+.home-subtitle {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+}
+.navigation .container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  min-width: 240px;
+  min-height: 65px;
+  margin: 24px auto 0 auto;
+  padding: 24.5px 62.5px;
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #fed136;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn:hover {
+  outline: 0;
+  background: #fed136;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Services */
+.services {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+}
+/* Our Portfolio */
+
+/* Footer */
+.fa-solid {
+  font-size: 30px;
+  line-height: 60px;
+  color: #fed136;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
