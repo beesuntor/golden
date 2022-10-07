@@ -8,6 +8,18 @@ body {
   margin: 0;
   font-family: Montserrat;
 }
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-family: Montserrat;
+  font-style: bold;
+}
+.subtitle {
+  font-size: 16px;
+  text-align: center;
+  font-style: italic;
+  color: #777;
+}
 
 /* Navigation*/
 .navigation {
@@ -33,9 +45,6 @@ body {
 .menu,
 .home {
   z-index: 2;
-}
-.row {
-  max-height: 150px;
 }
 
 .logo {
@@ -115,14 +124,72 @@ body {
   justify-content: center;
   /* text-align: center; */
 }
+.services i {
+  line-height: 1.7;
+}
+.box-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.boxes {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-right: 50px;
+}
 /* Our Portfolio */
+.portfolio {
+  background-color: rgb(244, 244, 244);
+}
+.portfolio-image {
+  position: relative;
+  width: 290px;
+  height: 310px;
+}
+.box {
+  width: 290px;
+  height: 393px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box p {
+  font-size: 14px;
+  font-style: italic;
+  color: #777;
+}
+.box h4 {
+  font-family: Montserrat;
+  font-style: bold;
+  font-size: 18px;
+}
 
 /* Footer */
+.footer i {
+  line-height: 1.7;
+}
+.footer {
+  min-height: 120px;
+}
+.social {
+  margin-left: 0;
+}
 .fa-solid {
   font-size: 30px;
   line-height: 60px;
   color: #fed136;
   border: 3px solid #fed136;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+.fa-brands {
+  font-size: 30px;
+  line-height: 60px;
+  color: white;
+  border: 3px solid #222;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -139,18 +206,42 @@ body {
 }
 
 .fa-twitter {
-  background: #55acee;
+  background: #222;
   color: white;
 }
-.fa-facebook {
-  background: #3b5998;
+.fa-facebook-f {
+  background: #222;
   color: white;
 }
-.fa-pinterest {
-  background: #cb2027;
+.fa-pinterest-p {
+  background: #222;
   color: white;
 }
-.fa-google {
-  background: #dd4b39;
+.fa-google-plus-g {
+  background: #222;
   color: white;
+}
+
+@media (min-width: 478px) and (max-width: 913px) {
+  .logo {
+    display: none;
+  }
+  .header {
+    justify-content: center;
+    width: -webkit-fill-available;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .home-subtitle,
+  .home-title {
+    margin-top: 0;
+  }
+  .home {
+    max-width: max-content;
+  }
+}
+@media (min-width: 375px) and (max-width: 579px) {
+  .logo {
+    display: none;
+  }
 }
